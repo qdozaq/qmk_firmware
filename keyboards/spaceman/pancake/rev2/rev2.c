@@ -43,11 +43,14 @@ bool oled_task_kb(void) {
         case 0:
             oled_write_P(PSTR("DEFLT\n"), false);
             break;
-        case 2:
-            oled_write_P(PSTR("FUNCT\n"), false);
-            break;
         case 1:
             oled_write_P(PSTR("RAISE\n"), false);
+            break;
+        case 2:
+            oled_write_P(PSTR("LOWER\n"), false);
+            break;
+        case 3:
+            oled_write_P(PSTR("NUMBERS\n"), false);
             break;
         default:
             // Or use the write_ln shortcut over adding '\n' to the end of your string
