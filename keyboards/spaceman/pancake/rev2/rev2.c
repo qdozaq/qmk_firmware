@@ -37,7 +37,13 @@ bool oled_task_kb(void) {
     oled_write_raw_P(pancake_logo, sizeof(pancake_logo));
     // Host Keyboard Layer Status
     oled_set_cursor(0, 4);
+    if (keymap_config.swap_lctl_lgui) {
+        oled_write_ln_P(PSTR("MAC"), false);
+    } else {
+        oled_write_ln_P(PSTR("WIN"), false);
+    }
     oled_write_P(PSTR("\nLAYER\n-----\n"), false);
+
 
     switch (get_highest_layer(layer_state)) {
         case 0:
