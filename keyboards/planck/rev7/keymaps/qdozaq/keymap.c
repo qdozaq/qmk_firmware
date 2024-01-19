@@ -57,9 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,  _QDOZAQ_QWERTY_1_,  KC_BSPC, \
   KC_ESC,  _QDOZAQ_QWERTY_2_, KC_QUOT, \
   KC_LSFT, _QDOZAQ_QWERTY_3_, SC_SENT, \
-  // had to switch opt, cmd, and ctlr around cause the keys were reading weird
-  // also cg_togg only seems to switch the gui key
-  KC_LOPT, XXXXXXX, KC_LGUI, KC_LCTL, LOWER,  NUMS,  KC_SPC,  RAISE,   XXXXXXX, XXXXXXX, XXXXXXX,  CG_TOGG \
+  KC_LCTL, XXXXXXX, KC_LOPT, KC_LGUI, LOWER,  NUMS,  KC_SPC,  RAISE,   XXXXXXX, XXXXXXX, XXXXXXX,  CG_TOGG \
 ),
 
 /* Raise
@@ -93,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_LOWER] = LAYOUT_planck_grid_wrapper( \
   _______, _QDOZAQ_FN_, _______, \
-  _______, _______, _______, _______, _______, _______,         _QDOZAQ_ARROWS_,            _______, _______, \
+  KC_F11, KC_F12, _______, _______, _______, _______,         _QDOZAQ_ARROWS_,            _______, _______, \
   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______ \
 ),
@@ -130,7 +128,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_ADJUST] = LAYOUT_planck_grid(
     _______, QK_BOOT, DB_TOGG, RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD, KC_DEL ,
-    _______, EE_CLR,  MU_NEXT, AU_ON,   AU_OFF,  AG_NORM, AG_SWAP, _______, _______, _______, _______, _______,
+    _______, EE_CLR,  MU_NEXT, AU_ON,   AU_OFF,  _______, _______, _______, _______, _______, _______, _______,
     _______, AU_PREV, AU_NEXT, MU_ON,   MU_OFF,  MI_ON,   MI_OFF,  _______, _______, _______, _______, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
 )
