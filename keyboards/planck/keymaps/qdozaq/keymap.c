@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = LAYOUT_planck_grid_wrapper( \
   KC_TAB,  _QDOZAQ_QWERTY_1_,  KC_BSPC, \
   KC_ESC,  _QDOZAQ_QWERTY_2_, KC_QUOT, \
-  KC_LSFT, _QDOZAQ_QWERTY_3_, KC_SFTENT, \
+  KC_LSFT, _QDOZAQ_QWERTY_3_, SC_SENT, \
   KC_LCTL, XXXXXXX, KC_LALT, KC_LGUI, LOWER,  NUMS,  KC_SPC,  RAISE,   XXXXXXX, XXXXXXX, XXXXXXX,  CG_TOGG \
 ),
 
@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = LAYOUT_planck_grid_wrapper( \
-  RESET,  _QDOZAQ_SYMBOLS_2_, _______, \
+  QK_BOOT,  _QDOZAQ_SYMBOLS_2_, _______, \
   _______,  _QDOZAQ_SYMBOLS_3_, _______, \
   _______,  _QDOZAQ_SYMBOLS_4_, _______, \
   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______ \
